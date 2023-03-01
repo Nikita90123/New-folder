@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+    color: black;
+    padding: 20px;
+    grid-area: header;
+}
+
+nav {
+    background-color: rgb(97, 177, 209);
+    grid-area: nav;
+}
+
+main {
+    background-color: lightblue;
+    color: black;
+    grid-area: main;
+}
+
+aside {
+    background-color: skyblue;
+    grid-area: aside;
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    grid-area: footer;
+}

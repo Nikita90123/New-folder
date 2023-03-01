@@ -1,0 +1,61 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "aside main main"
+        "footer footer footer";
+}
+
+body {
+    background-color: wheat;
+}
+
+header a {
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: rgb(12, 120, 245);
+    padding: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+nav > ul > li:hover ul {
+    opacity: 1;
+}
+
+nav li ul li:hover {
+    background-color: red;
+}
